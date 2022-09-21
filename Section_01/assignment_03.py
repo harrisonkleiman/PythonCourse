@@ -21,7 +21,8 @@ word = "Cool"
 # Expected Result Printed: [[Cool]]
 
 # Your code below:
-
+result = chars[:2] + word + chars[2:]
+print(result)
 
 
 
