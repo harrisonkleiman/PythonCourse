@@ -8,6 +8,18 @@
 """
 # Your Code Below:
 
+def separate(string):
+    list = []
+    for char in string:
+        list.append(char)
+    return list
+
+# Test Code Below:
+
+print(separate("hello"))
+
+# Output:
+# ['h', 'e', 'l', 'l', 'o']
 
 
 

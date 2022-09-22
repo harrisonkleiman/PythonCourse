@@ -7,8 +7,17 @@
 
 # your code below:
 
+def merge_lists(list1, list2):
+    return list1 + list2
 
+# test code below:
 
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+print(merge_lists(list1, list2))
+
+#  output:
+#  [1, 2, 3, 4, 5, 6]
 
 
 
