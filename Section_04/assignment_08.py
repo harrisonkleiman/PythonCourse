@@ -15,8 +15,24 @@ sum78([1, 1, 7, 8, 2]) → 4
 """
 
 #Your Code Below:
+def sum_8(list):
+    sum = 0 # initialize sum
+    i = 0 # initialize i
+    while i < len(list): # loop through the list
+        if list[i] == 7: # if the element is 7
+            while list[i] != 8: # loop until the element is 8
+                i += 1 # increment i
+        else: # if the element is not 7
+            sum += list[i] # add the element to the sum
+        i += 1 # increment i
+    return sum 
 
+# Test Code Below:
 
+print(sum_8([1, 2, 2])) # 5
+print(sum_8([1, 2, 2, 7, 99, 99, 8])) # 5
+print(sum_8([1, 1, 7, 8, 2])) # 4
+    
 
 
 

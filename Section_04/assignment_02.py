@@ -20,6 +20,18 @@ Example:
 # Your Code Below:
 
 
+def pay_extra(working, hour):
+    #if employee is working and hour is between 8pm and 8am
+    if working and (hour >= 20 or hour <= 8):
+        return True 
+    else:
+        return False
+
+# Test Code Below:
+
+print(pay_extra(True, 11))
+print(pay_extra(False, 5))
+print(pay_extra(True, 6))
 
 
 

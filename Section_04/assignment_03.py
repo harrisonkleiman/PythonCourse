@@ -13,11 +13,18 @@ sequence([]) → False
 
 # Your Code Below:
 
+def sequence(list):
+    for i in range(len(list) - 2): # -2 because we need to check 
+                                   #the next 2 elements
+        if list[i] == 1 and list[i + 1] == 2 and list[i + 2] == 3:
+            return True
+    return False
 
+# Test Code Below:
 
-
-
-
+print(sequence([1, 1, 2, 3, 1])) # True
+print(sequence([1, 1, 2, 4, 1])) # False
+print(sequence([1, 1, 2, 1, 2, 3])) # True
 
 
 

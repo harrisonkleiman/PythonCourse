@@ -17,6 +17,17 @@ last2('axxxaaxx') → 2
 """
 
 # Your Code Below:
+from re import L
+
+
+def last2(string):
+    count = 0
+    for i in range(len(string) - 2): # -2 because we don't want to count the last 2 characters
+        if string[i:i+2] == string[-2:]: # string[-2:] is the last 2 characters
+            count += 1 # count the number of times the last 2 characters appear in the rest of the string
+    return count
+
+
 
 
 

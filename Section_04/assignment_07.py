@@ -16,7 +16,17 @@ EXAMPLE:
 
 
 
+def string_match(a, b):
+    count = 0 # count the number of times the substring appears in both strings
+    for i in range(len(a) - 1): # -1 because we don't want to count the last character
+        if a[i:i+2] == b[i:i+2]: # check if the substring appears in both strings
+            count += 1 # count the number of times the substring appears in both strings
+    return count
 
+    
+print(string_match('xxcaazz', 'xxbaaz')) #→ 3
+print(string_match('abc', 'abc')) #→ 2
+print(string_match('abc', 'axc')) #→ 0
 
 
 
