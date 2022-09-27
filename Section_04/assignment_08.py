@@ -15,7 +15,7 @@ sum78([1, 1, 7, 8, 2]) → 4
 """
 
 #Your Code Below:
-def sum_8(list):
+def sum_78(list):
     sum = 0 # initialize sum
     i = 0 # initialize i
     while i < len(list): # loop through the list
@@ -29,9 +29,9 @@ def sum_8(list):
 
 # Test Code Below:
 
-print(sum_8([1, 2, 2])) # 5
-print(sum_8([1, 2, 2, 7, 99, 99, 8])) # 5
-print(sum_8([1, 1, 7, 8, 2])) # 4
+print(sum_78([1, 2, 2])) # 5
+print(sum_78([1, 2, 2, 7, 99, 99, 8])) # 5
+print(sum_78([1, 1, 7, 8, 2])) # 4
     
 
 
@@ -48,9 +48,9 @@ print(sum_8([1, 1, 7, 8, 2])) # 4
 
 
 
-print(sum78([1, 2, 2])) #→ 5
-print(sum78([1, 2, 2, 7, 99, 99, 8])) #→ 5
-print(sum78([1, 1, 7, 8, 2])) #→ 4
+print(sum_78([1, 2, 2])) #→ 5
+print(sum_78([1, 2, 2, 7, 99, 99, 8])) #→ 5
+print(sum_78([1, 1, 7, 8, 2])) #→ 4
 
 
 
